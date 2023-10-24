@@ -10,6 +10,14 @@ dependencyResolutionManagement {
     repositories {
         google()
         mavenCentral()
+
+        String storageUrl = System.env.FLUTTER_STORAGE_BASE_URL ?: "https://storage.googleapis.com"
+        maven {
+            url '/Users/cuong.nv2/workspace/company/onboarding-sdk-flutter/build/host/outputs/repo'
+        }
+        maven {
+            url "$storageUrl/download.flutter.io"
+        }
     }
 }
 
