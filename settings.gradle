@@ -13,6 +13,5 @@ dependencyResolutionManagement {
     }
 }
 
-rootProject.name = "Flutter View Parent App"
-include(":app")
- 
+rootProject.name = "FlutterViewParentApp"
+include ':app'
